@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+<title>Our Works | VeKnova Technologies</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f8fc;
+}
+
+/* Navigation */
+
+
+nav{
+background:#0b3d91;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.menu-btn{
+font-size:30px;
+cursor:pointer;
+display:block;
+}
+
+.menu{
+position:fixed;
+top:70px;
+right:-250px;
+width:220px;
+height:100%;
+background:#0b3d91;
+transition:.4s;
+padding-top:30px;
+}
+
+.menu a{
+display:block;
+color:white;
+padding:18px;
+text-decoration:none;
+font-size:20px;
+transition:.3s;
+}
+
+.menu a:hover{
+background:#1565c0;
+padding-left:30px;
+}
+
+.menu.active{
+right:0;
+}
+
+}
+
+/* Banner */
+
+.banner{
+background:linear-gradient(135deg,#0B3D91,#2196F3);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.banner h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.banner p{
+font-size:22px;
+}
+
+/* Works */
+
+.container{
+width:90%;
+margin:60px auto;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+color:#0B3D91;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#0B3D91;
+color:white;
+}
+
+.icon{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.card p{
+line-height:30px;
+font-size:17px;
+}
+
+/* Button */
+
+.btn{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:#FFD700;
+color:black;
+font-size:17px;
+border-radius:30px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* Footer */
+
+footer{
+background:#0B3D91;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.banner h1{
+font-size:38px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VeKnova Technologies</div>
+          <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+
+<div class="menu" id="menu">
+
+
+
+<a href="index.html">Home</a>
+<a href="vekabout.html">About</a>
+<a href="vekss.html">Strategy</a>
+<a href="vekwork.html">Works</a>
+<a href="vekmsg.html">Founder's message</a>
+<a href="vekcon.html">Contact</a>
+</div>
+
+</nav>
+
+<section class="banner">
+
+<h1>Our Works</h1>
+
+<p>Innovative Technology Solutions for Every Business</p>
+
+</section>
+
+<div class="container">
+
+<h1 class="title">What We Do</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h2>Website Development</h2>
+
+<p>
+Modern responsive websites for businesses, schools,
+colleges and startups using HTML, CSS, JavaScript and modern frameworks.
+</p>
+
+<button class="btn">Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h2>Software Development</h2>
+
+<p>
+Desktop applications and customized business software
+to improve productivity and simplify daily operations.
+</p>
+
+<button class="btn">Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📱</div>
+
+<h2>Mobile App Development</h2>
+
+<p>
+Develop Android applications with attractive UI,
+security and high performance for modern businesses.
+</p>
+
+<button class="btn">Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🤖</div>
+
+<h2>Artificial Intelligence</h2>
+
+<p>
+Smart AI-powered automation, chatbots,
+machine learning solutions and intelligent systems.
+</p>
+
+<button class="btn">Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🎓</div>
+
+<h2>Programming Education</h2>
+
+<p>
+Live webinars, coding bootcamps and career guidance
+for students in Python, Java, C, C++, JavaScript and Web Development.
+</p>
+
+<button class="btn">Learn More</button>
+
+</div>
+
+<div class="card">
+
+<div class="icon">☁️</div>
+
+<h2>Cloud & IT Solutions</h2>
+
+<p>
+Cloud computing, IT consulting,
+technical support and digital transformation services.
+</p>
+
+<button class="btn">Learn More</button>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>VeKnova Technologies</h3>
+
+<p>Innovating the Future Through Technology</p>
+
+<br>
+
+<p>© 2026 VeKnova Technologies. All Rights Reserved.</p>
+
+</footer>
+          <script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+function learnMore(){
+
+alert("Welcome to VeKnova Technologies!");
+
+}
+
+</script>
+
+</body>
+</html>

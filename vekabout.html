@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <br>
+          <br>
+          <br>
+<title>About Us | VeKnova Technologies</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+}
+
+/* Navigation */
+
+
+nav{
+background:#0b3d91;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.menu-btn{
+font-size:30px;
+cursor:pointer;
+display:block;
+}
+
+.menu{
+position:fixed;
+top:70px;
+right:-250px;
+width:220px;
+height:100%;
+background:#0b3d91;
+transition:.4s;
+padding-top:30px;
+}
+
+.menu a{
+display:block;
+color:white;
+padding:18px;
+text-decoration:none;
+font-size:20px;
+transition:.3s;
+}
+
+.menu a:hover{
+background:#1565c0;
+padding-left:30px;
+}
+
+.menu.active{
+right:0;
+}
+
+/* Banner */
+
+.banner{
+    background:linear-gradient(135deg,#0B3D91,#1976D2);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.banner h1{
+    font-size:50px;
+}
+
+.banner p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+/* About */
+
+.about{
+    max-width:1200px;
+    margin:50px auto;
+    display:flex;
+    gap:40px;
+    align-items:center;
+    padding:20px;
+}
+
+.about img{
+    width:45%;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.content{
+    width:55%;
+}
+
+.content h2{
+    color:#0B3D91;
+    margin-bottom:15px;
+}
+
+.content p{
+    line-height:30px;
+    font-size:18px;
+    color:#444;
+    margin-bottom:20px;
+}
+
+/* Mission Vision */
+
+.boxes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:50px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.box h2{
+    color:#0B3D91;
+    margin-bottom:15px;
+}
+
+.box p{
+    line-height:28px;
+}
+
+/* Footer */
+
+footer{
+    background:#0B3D91;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.about{
+    flex-direction:column;
+}
+
+.about img{
+    width:100%;
+}
+
+.content{
+    width:100%;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VeKnova Technologies</div>
+          <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+
+<div class="menu" id="menu">
+
+
+<a href="index.html">Home</a>
+<a href="vekabout.html">About</a>
+<a href="vekss.html">Strategy</a>
+<a href="vekwork.html">Works</a>
+<a href="vekmsg.html">Founder's message</a>
+<a href="vekcon.html">Contact</a>
+</div>
+
+</nav>
+
+<section class="banner">
+
+<h1>About Us</h1>
+
+<p>Innovating Today, Building Tomorrow</p>
+
+</section>
+
+<section class="about">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900" alt="Technology">
+
+<div class="content">
+
+<h2>Who We Are</h2>
+
+<p>
+
+VeKnova Technologies is a modern technology startup dedicated to creating
+innovative digital solutions for businesses, students, and organizations.
+
+We specialize in website development, software development,
+programming education, artificial intelligence, cloud computing,
+and IT consulting.
+
+Our goal is to empower people with technology that is reliable,
+creative, and affordable.
+
+</p>
+
+<h2>Why Choose Us?</h2>
+
+<p>
+
+✔ Professional Web Development<br>
+✔ Modern Software Solutions<br>
+✔ Programming & Coding Training<br>
+✔ AI & Automation Services<br>
+✔ Quality Support & Innovation
+
+</p>
+
+</div>
+
+</section>
+
+<section class="boxes">
+
+<div class="box">
+
+<h2>🎯 Our Mission</h2>
+
+<p>
+
+To deliver high-quality technology solutions that help students,
+startups, and businesses achieve success through innovation.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h2>🚀 Our Vision</h2>
+
+<p>
+
+To become one of India's leading technology companies by building
+innovative software and inspiring future developers.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h2>💡 Our Values</h2>
+
+<p>
+
+Innovation, Quality, Integrity, Customer Satisfaction,
+Continuous Learning, and Teamwork.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 VeKnova Technologies | All Rights Reserved
+
+</footer>
+          <script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+function learnMore(){
+
+alert("Welcome to VeKnova Technologies!");
+
+}
+
+</script>
+
+</body>
+</html>

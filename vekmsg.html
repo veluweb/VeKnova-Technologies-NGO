@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founder | VeKnova Technologies</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+/* Navigation */
+
+nav{
+background:#0b3d91;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.menu-btn{
+font-size:30px;
+cursor:pointer;
+display:block;
+}
+
+.menu{
+position:fixed;
+top:70px;
+right:-250px;
+width:220px;
+height:100%;
+background:#0b3d91;
+transition:.4s;
+padding-top:30px;
+}
+
+.menu a{
+display:block;
+color:white;
+padding:18px;
+text-decoration:none;
+font-size:20px;
+transition:.3s;
+}
+
+.menu a:hover{
+background:#1565c0;
+padding-left:30px;
+}
+
+.menu.active{
+right:0;
+}
+
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:white;
+}
+
+
+
+/* Founder Section */
+
+.container{
+max-width:1200px;
+margin:60px auto;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.container img{
+width:350px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.content{
+flex:1;
+}
+
+.content h1{
+color:#0B3D91;
+font-size:40px;
+margin-bottom:10px;
+}
+
+.content h3{
+color:#444;
+margin-bottom:25px;
+}
+
+.content p{
+font-size:18px;
+line-height:32px;
+text-align:justify;
+color:#333;
+}
+
+.quote{
+margin-top:30px;
+padding:20px;
+background:#0B3D91;
+color:white;
+border-radius:10px;
+font-size:22px;
+font-style:italic;
+text-align:center;
+}
+
+footer{
+margin-top:40px;
+background:#0B3D91;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.container{
+flex-direction:column;
+text-align:center;
+}
+
+.container img{
+width:250px;
+}
+
+.content p{
+text-align:left;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VeKnova Technologies</div>
+          <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+
+<div class="menu" id="menu">
+
+          
+<a href="index.html">Home</a>
+<a href="vekabout.html">About</a>
+<a href="vekss.html">Strategy</a>
+<a href="vekwork.html">Works</a>
+<a href="vekmsg.html">Founder's message</a>
+<a href="vekcon.html">Contact</a>
+</div>
+</nav>
+
+<div class="container">
+
+<img src="vel.jpeg" alt="Founder">
+
+<div class="content">
+
+<h1>Founder & CEO</h1>
+
+<h3>Velmurugan D</h3>
+
+<p>
+
+Welcome to <b>VeKnova Technologies</b>.
+
+I founded VeKnova Technologies with a simple vision: to make technology accessible, practical, and affordable for everyone. My goal is to help students build strong programming skills, support local businesses with modern websites, and create innovative digital solutions that solve real-world problems.
+
+I believe every student deserves quality technical education and every business deserves a professional online presence. Through VeKnova Technologies, I aim to inspire innovation, encourage continuous learning, and empower individuals with technology.
+
+Our mission is to become a trusted technology company known for excellence, creativity, integrity, and customer satisfaction. We are committed to delivering high-quality web development, software solutions, AI-powered applications, and technical training that creates lasting value.
+
+Thank you for visiting VeKnova Technologies. Together, let's build the future through innovation and technology.
+
+</p>
+
+<div class="quote">
+
+"Dream Big. Build Smart. Innovate for the Future."
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>VeKnova Technologies</h3>
+
+<p>Innovating the Future Through Technology</p>
+
+<p>© 2026 VeKnova Technologies. All Rights Reserved.</p>
+
+</footer>
+          <script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+function learnMore(){
+
+alert("Welcome to VeKnova Technologies!");
+
+}
+
+</script>
+
+</body>
+</html>

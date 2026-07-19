@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VeKnova Technologies</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+}
+
+/* Navbar */
+
+nav{
+background:#0b3d91;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.menu-btn{
+font-size:30px;
+cursor:pointer;
+display:block;
+}
+
+.menu{
+position:fixed;
+top:70px;
+right:-250px;
+width:220px;
+height:100%;
+background:#0b3d91;
+transition:.4s;
+padding-top:30px;
+}
+
+.menu a{
+display:block;
+color:white;
+padding:18px;
+text-decoration:none;
+font-size:20px;
+transition:.3s;
+}
+
+.menu a:hover{
+background:#1565c0;
+padding-left:30px;
+}
+
+.menu.active{
+right:0;
+}
+
+/* Hero */
+
+.hero{
+
+height:100vh;
+
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+line-height:35px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.hero button{
+
+margin-top:35px;
+
+padding:15px 40px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ffcc00;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.hero button:hover{
+
+background:white;
+
+transform:scale(1.05);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">VeKnova Technologies</div>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+
+<div class="menu" id="menu">
+
+<a href="#">🏠 Home</a>
+
+<a href="vekabout.html">ℹ About Us</a>
+
+<a href="vekss.html">🌟Strategy</a>
+
+<a href="vekwork.html">💻Works</a>
+<a href="vekmsg.html">💬Founder's message</a>
+
+<a href="vekcon.html">📞Contact</a>
+<br>
+          <br>
+          <br>
+<div style="height:3px;background:#fff;width:100%;"></div>
+<a href="pro.html">📞Our project</a>
+<div style="height:3px;background:#fff;width:100%;"></div>
+
+
+</div>
+          </nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to VeKnova Technologies</h1>
+
+<p>
+
+Building the future through innovation, software engineering, web development,
+AI-powered solutions, and programming education.
+
+At <b>VeKnova Technologies</b>, we empower students, startups, and businesses
+with modern technology solutions that are reliable, scalable, and affordable.
+Our vision is to inspire innovation and transform ideas into successful digital products.
+
+</p>
+
+<button onclick="learnMore()">Get Started</button>
+
+</div>
+
+</section>
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+function learnMore(){
+
+alert("Welcome to VeKnova Technologies!");
+
+}
+
+</script>
+
+</body>
+</html>
